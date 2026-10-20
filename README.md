@@ -42,11 +42,31 @@ If GitHub Pages is enabled for this repo, play it live at:
 - **Sound:** Browsers block audio until you interact with the page — click once, then type.
 - **Voice quality:** Chrome's built-in voices tend to sound best.
 
-## Credits
+## Based on
 
-Based on the original [keyboard-letters](https://github.com/harry-wood/keyboard-letters) by
-Harry Wood (released into the public domain under the Unlicense). This version replaces the
-image set with offline emoji, adds numbers, and uses a three-panel cycling layout.
+This project is built on the original
+[keyboard-letters](https://github.com/harry-wood/keyboard-letters) by Harry Wood
+(released into the public domain under the Unlicense). I used that repo as a starting point and
+modified it for my own needs — specifically, as a learning game for a young child.
+
+## What I changed
+
+Starting from the original, I made the following changes:
+
+- **Replaced all images with emoji** — the original pulled images from Wikimedia, but many of those
+  links had broken. I swapped every letter to a built-in emoji so the game works fully offline with
+  nothing to break.
+- **Added numbers 0–9** — the original only covered letters; I added the number keys with spoken
+  number names.
+- **New three-panel layout** — instead of pictures appearing at random positions, I split the screen
+  into three bordered panels. Pictures fill left → middle → right, then the next one replaces the
+  leftmost and keeps cycling.
+- **Fixed the "J" entry** — it said "Jam" but showed a strawberry; changed it to "Juice" so the word
+  and picture match.
+- **Shortened the spoken text** and removed a small bug from the original source.
+
+The original author (and other past contributors) remain in the commit history, which is why they
+still appear under the repository's contributors — their earlier work is the foundation this builds on.
 
 ## License
 
