@@ -1,42 +1,53 @@
-# keyboard-letters
-Game for babies. Whack the keyboard. See (and hear) colourful letters
+# Keyboard Letters for Kids 🧒⌨️
 
-**>>> [Play Keyboard Letters Game](https://harrywood.co.uk/kids/keyboard-letters/) <<<**
+A simple, offline, kid-friendly keyboard learning game. A child presses any key and sees a big
+picture in one of three panels while a voice says the word out loud — great for letting a toddler
+safely play while you learn their letters and numbers.
 
-[Read the blog post about it](https://harrywood.co.uk/blog/2016/09/10/keyboard-letters-game/)
+**Letters A–Z** → emoji + spoken word (e.g. press **A** → 🍎 "Apple")
+**Numbers 0–9** → the number + spoken name (e.g. press **5** → 5️⃣ "Five")
 
-[![still image](https://harrywood.co.uk/blog/wp-content/uploads/2016/09/keyboard-letters-video.png)](https://www.youtube.com/watch?v=DXWnODG4VBg)
+## Features
 
-## Not just letters!
+- **26 letters A–Z**, each with a matching emoji and spoken word
+- **Numbers 0–9** with spoken names
+- **Three-panel layout** — pictures appear left → middle → right, then the next one replaces the
+  leftmost and keeps cycling
+- **100% offline** — uses emoji instead of downloaded images, so nothing can break and there are no
+  broken links or network dependencies
+- **Speaks each word aloud** using the browser's built-in speech synthesis
+- Single self-contained `index.html` — no build step, no dependencies
 
-Spell out some words to trigger something special. Which words? See if you can find them. ...or cheat
-and look at the source code.
+## How to run
 
-Also try **sums**! Type `1+2=`
+### Option 1 — Open the file directly
+Download or clone the repo, then open `index.html` in any modern browser (Chrome works best for
+voice):
 
-## Options
+```bash
+git clone https://github.com/joysalespath/keyboard-letters-kids.git
+cd keyboard-letters-kids
+open index.html        # macOS
+# or just double-click index.html in your file explorer
+```
 
-`voice`: Specify which browser voice synthesis voice to use.
+Click anywhere on the page once (to enable sound), then press any letter or number.
 
-The list of voices comes from your chosen browser. Some voice names seem to be web standard, others
-not, so it can be fun look in a different browser e.g. this one will work on Chrome but not on safari:
-https://harrywood.co.uk/kids/keyboard-letters/?voice=Google%20UK%20English%20Female
+### Option 2 — Play online (GitHub Pages)
+If GitHub Pages is enabled for this repo, play it live at:
+<https://joysalespath.github.io/keyboard-letters-kids/>
 
-In general Chrome's voice synthesis seems the best. We've also had fun with the "Portuguese" voice
-(although keyboard letters is not internationalised when it comes to reading words)
+## Notes
 
-`mode`:
-  - `letter-is-for-word` (default) - Read out letter "is for" word e.g. "A is for Apple".
-  - `letters` - Just showing letters.
-  - `words` - Show and read out words beginning with that letter.
+- **Sound:** Browsers block audio until you interact with the page — click once, then type.
+- **Voice quality:** Chrome's built-in voices tend to sound best.
 
-Words and images for those words come from the
-[WikiJunior Alphabet book](https://en.wikibooks.org/wiki/Wikijunior:Alphabet) (all open licensed)
+## Credits
 
-`maxlen` - (Secret option only as a URL parameter) Specify a limit to the number of letters on
-screen. Hit the limit and they'll start disappering in the background as you type
+Based on the original [keyboard-letters](https://github.com/harry-wood/keyboard-letters) by
+Harry Wood (released into the public domain under the Unlicense). This version replaces the
+image set with offline emoji, adds numbers, and uses a three-panel cycling layout.
 
-## Dev notes
-Currently it's an all-in-one-file self contained thing (css and javascript inline in the HTML)
-which I rather like actually, but if we want to make it more complicated, or if I want to share
-logic across several similar "kids" things, then I might end up splitting out the javascript.
+## License
+
+[Unlicense](LICENSE) — public domain. Free to copy, modify, and use for any purpose.
